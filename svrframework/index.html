@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/svricon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVR Framework</title>
+    <script type="module" crossorigin src="/assets/index-rWBHDIq7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-oJOn7VqT.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="brand">
+        <img src="/assets/SVR.Logo-ek2ytsHO.png">
+        <a href="#">SVR Framework</a>
+      </div>
+      
+      <ul>
+        <li><a href="#wiki">Wiki</a> </li>
+        <li><a id="documentation" href="#documentation">Instructions</a></li>
+      </ul>
+    </nav>
+  
+    <div class="popup">
+    <div></div>
+    <div><h1>Instructions</h1></div>
+    <button id="hideBtn">close</button>
+    </div>
+    <div class="content">
+
+      graph TD
+
+      %%{init:{
+      'flowchart':{'nodeSpacing': 50, 'rankSpacing': 200},
+      'theme':'base',
+      'themeVariables': {'lineColor': '#bfbfbf', 'primaryColor': '#fff'}
+      }}%%
+
+
+
+      %% Main Categories    ------------------------------------------------------------------
+
+      Title((SVRFrameWork)) ---Audio[Audio]
+      Title:::mainHeader ---Managers[Managers]
+      Title ---Scripts[Scripts]
+      Title ---HelpSystem[Help System]
+      Title ---Objects[Objects]
+      Title ---Media[Media]
+      Title ---ScenarioEditor[Scenario Editor]
+      Title ---Data[Data]
+      Title ---General[General]
+      Title ---TPA[TPA]
+      Title ---UserInterface[User Interface]
+      Title ---Extensions[Extensions]
+
+
+      %% SubCategories ------------------------------------------------------------------
+      
+      %% Audio sub-Category
+      Audio:::subCategory ---AudioCoreLogic
+      Audio ---AudioPrefabs
+      Audio ---VoiceOverComponents
+
+      %% Managers sub-category
+      Managers:::subCategory ---ConfigManager
+
+      %% Scripts sub-category
+      Scripts:::subCategory ---EditorCore
+      Scripts ---UtilitiesCore
+      Scripts ---Atribbutes
+      Scripts ---VFXToolkit
+
+      %% Help sub-category
+      HelpSystem:::subCategory ---HelpSystemComponents
+
+      %% Objects sub-category
+      Objects:::subCategory ---InteractablesAR
+      Objects ---InteractablesVR
+      Objects ---PrototypingAssets
+      Objects ---VFXPrefabs
+
+      %% Media sub-category
+      Media:::subCategory ---MediaCreationToolkit
+
+      %% ScenarioEditor sub-category
+      ScenarioEditor:::subCategory ---ScenarioEditorToolkit
+      ScenarioEditor ---ScenarioFlowCore
+      ScenarioEditor ---ScenarioFlowStandardActions
+
+      %% Data sub-category
+      Data:::subCategory ---ScriptableObjectsLogic
+      Data ---ScriptableObjectsPackage
+
+      %% General sub-category
+      General:::subCategory ---SeriousVRAppFoundation
+      General ---TranslationToolkit
+      General ---WebRequestToolkit
+
+      %% TPA sub-category
+      TPA:::subCategory ---TPAComponents
+
+      %% UI sub-category
+      UserInterface:::subCategory ---UISystemCore
+
+      %% Packages Content ------------------------------------------------------------------
+      
+      InteractablesVR ---InteractablesVRList[
+      Attacher
+      RaycastPlacableInstance
+      Grabable
+      PushButton
+      Rotatable
+      ObjectResetter
+      RecorderManager
+      XROrigin
+      Socket
+      ]:::infolijst
+
+      ConfigManager ---ConfigManagerList[
+      Config
+      ConfigManager
+      ]:::infolijst
+
+      VFXPrefabs ---VFXPrefabsList[
+      RayCastDecalPlacer
+      FireExtinguisher
+      ]:::infolijst
+
+      MediaCreationToolkit ---MediaCreationToolkistList[
+      Action 
+      Manager
+      ToolkitSettings
+      ]:::infolijst
+
+      AudioCoreLogic ---AudioCoreLogicList[  
+      AudioManager
+      AudioFade
+      AudioClipData
+      AudioClipPlayer
+      SnapshotTransitionManager
+      AudioManagerEditor
+      AudioClipDataDrawer
+      ]:::infolijst
+
+      AudioPrefabs ---AudioPrefabsList[
+      AudioReverbZone
+      AudioSource
+      AudioMixer
+      ]:::infolijst
+
+      EditorCore ---EditorCoreList[
+      FoldRestorer
+      FrameworkDrawer
+      FrameWorkEditor
+      ReorderableListEditor
+      ]:::infolijst
+      
+
+      UtilitiesCore ---UtilitiesCoreList[
+      AppHelper
+      CollisionToEventTranslatorEditor
+      CollisionToEventTranslator
+      EventManager
+      ExtensionMethods
+      Follow
+      LookAt
+      MoveToRandomTransformLocation
+      OnLoadUnityEvent
+      SceneLoadManager
+      ScreenFade
+      SendRandomUnityEvent
+      Teleport
+      TransformCopier
+      UtilitiesCoreHelper
+      UtilityObject
+      WaitSecondsUnityEvent
+      CollisionToEventTranslatorEditor
+      EditorExtensionMethods
+      TransformCopierEditor
+      UnityEventToolsHelper
+      ]:::infolijst
+
+      Atribbutes ---AtribbutesList[
+      FoldOutAttribute
+      HelpAttribute
+      HideIfBoolAttribute
+      HideifFalseAttribute
+      HideIfNotValueAttribute
+      HideIfTrueAttribute
+      HideIfZeroAttribute
+      ReadOnlyAttribute
+      SingleUnityLayer
+      UnityLayerAttribute
+      ]:::infolijst
+
+      HelpSystemComponents ---HelpSystemComponentsList[
+      Component
+      GhostCreator
+      Ghosting
+      GhostMover
+      GhostRenderer
+      Highlighter
+      LeanTweenAnimator
+      AnimationPreset
+      OutlineRenderer
+      ]:::infolijst
+
+      PrototypingAssets ---PrototypingAssetsList[
+      Walls
+      Floors
+      Pillars
+      Windows
+      Doors
+      ]:::infolijst
+
+
+      ScenarioEditorToolkit ---ScenarioEditorToolkitList[
+      ScenariEditorActionProperties
+      ScenarioEditorEntityProperties
+      ScenarioEditorHelpActionProperties
+      ScenarioEditorProperties
+      InteractionMakers
+      EntityMakers
+      Importer
+      Mapper
+      RestClient
+      ScenearioEditor
+      Scenewindow
+      SettingsWindow
+      SetupWindow
+      Validator
+      VoiceOverWindow
+      InteractionMakerManager
+      ScenarioEditorEntityTypeMap
+      HelpActionCreator
+      Finder
+      Paths
+      ]:::infolijst
+
+      ScenarioFlowStandardActions ---ScenarioFlowStandardActionsList[
+        AudioAction
+        BasicAction
+        WaitAction
+        MenuManager
+  
+      ]:::infolijst
+
+      ScenarioFlowCore ---ScenarioFlowCoreList[
+        ActionEditor
+        ActionManagerEditor
+        ActionManagerFixer
+        ActionDataDrawer
+        ActionManager
+        ActionManagerAction
+        HelpManager
+        Action
+      ]:::infolijst
+
+      ScriptableObjectsLogic ---ScriptableObjectsLogicList[
+        baseValidator
+        GameObjectToBaseVariableEvent
+        VariableContainer
+        GameObjectToGenericVariableEvent
+        GenericVariableContainer
+        GenericVariableValidator
+        GameObjectToIntVariableEvent
+        IntValidator
+        IntvariableContainer
+        BoolValidator
+        ConditionChecker
+        ConditionManager
+        ConditionValidator
+        EventPattern
+        FloatCalculator
+        FloatValidator
+        ImageFillSetter
+        IntervalGenerator
+        MaterialColorSetter
+        MaterialTexztureSetter
+        ModelMaterialSetter
+        StringValidator
+        StringValidatorTimespanCalculator
+        UITextSetter
+        QuickTriggerEvent
+      ]:::infolijst
+
+      ScriptableObjectsPackage ---ScriptableObjectsPackageList[
+        GameEventListener
+        Events
+        Attributes
+        BaseClasses
+        Variables
+        V2 Types
+      ]:::infolijst
+      
+
+    SeriousVRAppFoundation ---SeriousVRAppFoundationList[
+      Keyboard
+      Button Key
+      UI Ray InteractablesCore
+    ]:::infolijst
+
+    TranslationToolkit ---TranslationToolkitList[
+      HubDetector
+      LanguageSelector
+      UILanguageLoader
+      UILanguageVisualizer
+    ]:::infolijst
+
+    WebRequestToolkit ---WebRequestToolkitList[
+      SimpleJSON
+      RestClient
+      RSGPromise
+    ]:::infolijst
+
+    TPAComponents ---TPAComponentsList[
+      Authentication
+      KeyboardManager
+      SendingModule
+      TPAC
+      Login Scene
+    ]:::infolijst
+
+    UISystemCore ---UISystemCoreList[
+      UI input Mapper
+      CurvedUI Extension
+      UI Titles
+      UI Info Windows
+      UI base design
+    ]:::infolijst
+
+
+      %% Weblinks -------------------------------------------------------------------------
+
+      %% Audio Weblinks
+      click Title "#" "Click to view" _blank
+      click AudioCoreLogic "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Audio-Core-Logic-Package-Manual" _blank
+      click AudioPrefabs "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-prefabs-package-manual" _blank
+      click AudioSamples "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/audio-samples-package-manual" _blank
+      click VoiceOverComponents "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Voice-Over-Components-Package-Manual" _blank
+
+      %%  Scrips Weblinks
+      click EditorCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/editore-core-package-manual" _blank
+
+      %% Extensions Weblinks
+      click Extensions "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/extensions" _blank
+
+      %% Help System Weblinks
+      click HelpSystemComponents "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Help-System-Components" _blank
+
+      %% Scripts Weblinks
+      click InteractablesCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Interactables-Core" _blank
+      click InteractablesVR "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/interactables-vr-package" _blank
+
+      %% ScenarioEditor Weblinks
+      click ScenarioFlowCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Scenario-Flow-Core-Package-Manual" _blank
+      click ScenarioFlowStandardActions "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/Scenario-Flow-Standard-Actions" _blank
+
+      %% Data Weblinks
+      click ScriptableObjectsLogic "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/scriptable-objects-logic-package-manual" _blank
+      click ScriptableObjectsPackage "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/scriptable-objects-package-manual" _blank
+
+      %% User Interface Weblinks
+      click UISystemCore "http://wiki.int.serious-vr.com/en/Manuals/Production/Framework/ui-system-core-package-manual" _blank
+
+      %% General Weblinks
+      click SeriousVRAppFoundation "http://wiki.int.serious-vr.com/Manuals/Production/Framework/SeriousVR-App-Foundation" _blank
+
+      %% Media Weblinks
+      click MediaCreationToolkit "https://jenkins.int.serious-vr.com/job/MediaCreationToolkit/Documentation/" _blank
+
+      %% Class Style definitions ----------------------------------------------------------
+
+      classDef mainHeader fill:#FFFFFf, stroke:#ce5e1d, stroke-width:4px, padding:25px, font-size: 1.5em, color: #ce5e1d
+      classDef subCategory fill:#ffffff, stroke:#ce5e1d, stroke-width:2px, padding: 25px, font-size: 1.5em, color:#ce5e1d
+      classDef help stroke:#d45950;
+      classDef infolijst fill:ffffff, line-height: 35px, padding: 35px, float:left
+
+    </div>
+    
+  </body>
+</html>
